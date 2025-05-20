@@ -23,7 +23,7 @@ This plugin is an extension of WooCommerce, which allows you to sell your Moodle
 - After a successful product purchase in Woocommerce, the integration will auto-enroll the customer into the Moodle™ course(s) so that they can begin taking the course.
 - Removes users from Moodle™ courses when refunded or cancelling a Woocommerce order.
 - Seamless login with SSO
-- Import course outline data effortlessly.
+- Import courses with its syllabus summary.
 
 **Benefits of integrating Moodle™ LMS with Woocommerce Store**
 
