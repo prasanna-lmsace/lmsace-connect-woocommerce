@@ -468,11 +468,7 @@ class LACONN_Woocom extends LACONN_Main {
 		global $LACONN;
 		$order_id = $post->ID;
 		$details = wc_get_order($order_id);
-		if (method_exists($details, 'get_meta')) {
-			$enrolments = $details->get_meta('lac_enrolments');
-		} else {
-			$enrolments = get_post_meta($order_id, 'lac_enrolments', true);
-		}
+		$enrolments = $details->get_meta('lac_enrolments');
 		if (empty($enrolments)) {
 			echo esc_html_e("Order doesn't contain any enrolments in LMS", LAC_TEXTDOMAIN);
 			return false;
