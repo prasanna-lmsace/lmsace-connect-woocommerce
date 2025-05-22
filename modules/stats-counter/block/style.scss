@@ -1,0 +1,56 @@
+// This file can be used for frontend-specific styles for the block.
+// These styles will apply to the block's appearance on the live site.
+
+.lac-moodle-stats-counter-block {
+    // General container styles
+    // margin-bottom: 20px;
+    // border: 1px solid #eee;
+    // padding: 15px;
+    // background-color: #f9f9f9;
+
+    .lac-stats-title-block {
+        // Styles for the title, if used
+        // margin-top: 0;
+        // font-size: 1.5em;
+    }
+
+    .lac-stats-list-block {
+        list-style: none;
+        padding-left: 0;
+
+        .lac-stat-item-block {
+            // Styles for each statistic item
+            // margin-bottom: 8px;
+            // display: flex;
+            // justify-content: space-between;
+
+            .lac-stat-label-block {
+                // font-weight: bold;
+            }
+
+            .lac-stat-value-block {
+                // Specific style for the value
+            }
+        }
+    }
+
+    // Alignment styles (if not handled by theme or core)
+    &.alignwide {
+        // max-width: 1000px; // Example
+        // margin-left: auto;
+        // margin-right: auto;
+    }
+
+    &.alignfull {
+        // max-width: none;
+        // margin-left: calc(50% - 50vw);
+        // margin-right: calc(50% - 50vw);
+    }
+
+     .lac-stats-error {
+        color: red;
+        padding: 10px;
+        border: 1px solid red;
+        background-color: #ffe0e0;
+    }
+}

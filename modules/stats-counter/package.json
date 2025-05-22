@@ -1,0 +1,15 @@
+{
+  "name": "stats-counter",
+  "version": "1.0.0",
+  "description": "This module fetches and displays statistics from Moodle, such as total courses, active enrolments, course completions, and total users. It provides a Visual Composer element and a WordPress Block.",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build block/index.js --output-path=block/build",
+    "start": "wp-scripts start block/index.js --output-path=block/build"
+  },
+  "author": "LMSACE <https://lmsace.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.16.0"
+  }
+}

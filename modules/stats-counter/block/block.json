@@ -1,0 +1,37 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "lmsace-connect/moodle-stats-counter",
+    "version": "0.1.0",
+    "title": "Moodle Statistics Counter",
+    "category": "woocommerce",
+    "description": "Displays selected statistics from Moodle.",
+    "icon": "chart-bar",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "source": "html",
+            "selector": "h3.lac-stats-title-block"
+        },
+        "stats_to_show": {
+            "type": "array",
+            "default": ["total_courses", "total_users"],
+            "items": {
+                "type": "string"
+            }
+        },
+        "align": {
+            "type": "string",
+            "default": "none"
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": ["wide", "full"]
+    },
+    "textdomain": "lmsace-connect",
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css",
+    "render": "file:../includes/class-lacmod-stats-counter-block.php"
+}
